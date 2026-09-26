@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+@theme {
+  --color-outline: #85736d;
+  --color-inverse-surface: #31302f;
+  --color-inverse-primary: #ffb599;
+  --color-on-tertiary-container: #ffd6b0;
+  --color-on-primary-fixed-variant: #6c3924;
+  --color-on-secondary-fixed-variant: #763317;
+  --color-error-container: #ffdad6;
+  --color-secondary-container: #fd9e7a;
+  --color-surface-variant: #e6e2df;
+  --color-tertiary-container: #815930;
+  --color-primary: #703c27;
+  --color-on-surface-variant: #52443e;
+  --color-on-primary-fixed: #360f01;
+  --color-on-surface: #1c1b1a;
+  --color-on-primary: #ffffff;
+  --color-background: #fdf8f6;
+  --color-surface-container: #f1edeb;
+  --color-tertiary-fixed-dim: #f0bd8b;
+  --color-surface-dim: #ddd9d7;
+  --color-primary-fixed-dim: #ffb599;
+  --color-on-tertiary-fixed: #2c1600;
+  --color-tertiary: #66421a;
+  --color-surface-tint: #885039;
+  --color-tertiary-fixed: #ffdcbd;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface: #fdf8f6;
+  --color-primary-container: #8c533c;
+  --color-secondary: #934a2c;
+  --color-on-secondary-container: #763317;
+  --color-outline-variant: #d7c2bb;
+  --color-on-primary-container: #ffd5c5;
+  --color-on-tertiary: #ffffff;
+  --color-primary-fixed: #ffdbce;
+  --color-surface-bright: #fdf8f6;
+  --color-on-tertiary-fixed-variant: #623f18;
+  --color-on-secondary: #ffffff;
+  --color-on-error-container: #93000a;
+  --color-on-background: #1c1b1a;
+  --color-surface-container-low: #f7f3f0;
+  --color-on-error: #ffffff;
+  --color-secondary-fixed-dim: #ffb59a;
+  --color-surface-container-high: #ece7e5;
+  --color-secondary-fixed: #ffdbce;
+  --color-inverse-on-surface: #f4f0ee;
+  --color-error: #ba1a1a;
+  --color-surface-container-highest: #e6e2df;
+  --color-on-secondary-fixed: #370e00;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-gutter-desktop: 2.5rem;
+  --spacing-margin: 1.5rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-margin-desktop: 4rem;
+
+  --font-body-editorial-md: "Literata", Georgia, serif;
+  --font-body-editorial-lg: "Literata", Georgia, serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-headline-sm: "Playfair Display", Georgia, serif;
+  --font-display-lg: "Playfair Display", Georgia, serif;
+  --font-display-md: "Playfair Display", Georgia, serif;
+  --font-display-lg-mobile: "Playfair Display", Georgia, serif;
+  --font-display-md-mobile: "Playfair Display", Georgia, serif;
+  --font-label-sm: "Plus Jakarta Sans", sans-serif;
+  --font-label-md: "Plus Jakarta Sans", sans-serif;
+  --font-label-lg: "Plus Jakarta Sans", sans-serif;
+  --font-body-ui-sm: "Plus Jakarta Sans", sans-serif;
+  --font-body-ui-md: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Playfair Display", "Literata", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+/* Custom typography utility classes matching tailwind-config exactly */
+.text-body-editorial-md {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.005em;
+}
+.text-body-editorial-lg {
+  font-size: 21px;
+  line-height: 34px;
+  letter-spacing: 0.005em;
+}
+.text-headline-sm {
+  font-size: 20px;
+  line-height: 28px;
+}
+.text-headline-md {
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: -0.005em;
+}
+.text-headline-lg {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+}
+.text-display-md {
+  font-size: 44px;
+  line-height: 52px;
+  letter-spacing: -0.015em;
+}
+.text-display-md-mobile {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+}
+.text-display-lg {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -0.02em;
+}
+.text-display-lg-mobile {
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: -0.015em;
+}
+.text-body-ui-sm {
+  font-size: 13px;
+  line-height: 18px;
+}
+.text-body-ui-md {
+  font-size: 15px;
+  line-height: 22px;
+}
+.text-label-sm {
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+}
+.text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+}
+.text-label-lg {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Dark theme overrides when html.dark is active */
+html.dark {
+  --color-surface: #181514;
+  --color-background: #181514;
+  --color-surface-bright: #24201e;
+  --color-surface-container-lowest: #201c1a;
+  --color-surface-container-low: #231f1d;
+  --color-surface-container: #2a2523;
+  --color-surface-container-high: #332d2a;
+  --color-surface-container-highest: #3d3633;
+  --color-surface-variant: #3d3633;
+  --color-on-surface: #f4efe6;
+  --color-on-background: #f4efe6;
+  --color-on-surface-variant: #c8beb8;
+  --color-outline: #9b8e87;
+  --color-outline-variant: #4a403c;
+  --color-primary: #dca088;
+  --color-on-primary: #2d140a;
+  --color-primary-container: #8c533c;
+  --color-on-primary-container: #ffd5c5;
+  --color-secondary: #e89b7e;
+  --color-on-secondary: #370e00;
+}
+

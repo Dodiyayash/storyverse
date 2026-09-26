@@ -1,0 +1,6 @@
+{
+  "name": "StoryVerse — Literary Reading & Writing Sanctuary",
+  "description": "An immersive literary sanctuary crafted for discerning readers, creative writers, and dedicated essayists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
